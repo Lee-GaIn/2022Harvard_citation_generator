@@ -1,0 +1,68 @@
+:root {
+    /*Color*/
+    --main-bg-color: #F4FCD9;
+    --sub-bg-color: #C5D8A4;
+    --head-font-color: #382c2a;
+    --subHead-font-color: #292525;
+    --text-font-color: #1f1b1a;
+
+    /*Size*/
+    --basic-cont-padding: 12px;
+
+    /*Font Size*/
+    --head-font-size: 1em;
+    --subHead-font-size: 0.812em;
+    --text-font-size: 0.6em;
+
+    /*Font Style*/
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--main-bg-color);
+} 
+
+h1, ul {
+    font-size: var(--head-font-size);
+    color: var(--head-font-color);
+    text-align: center;
+    width: 80vw;
+    height: 5vh;
+    margin: 10px;
+}
+
+h2, label {
+    font-size: var(--subHead-font-size);
+    color:var(--subHead-font-color);
+    width: 40vw;
+}
+
+label + input {
+    width:80vw;
+}
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--sub-bg-color);
+    width: 80vw;
+    height: 40vh;
+    margin: 0vw 10vw;
+}
+
+#authorHeaderCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+#authorInfo {
+    
+}

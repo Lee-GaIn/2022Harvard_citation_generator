@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>2022 Havard Citation Generator</title>
+</head>
+
+<body>
+    <h1>2022 Havard Citation Generator</h1>
+    <form action="" class="mainCont" name="inputCont" id="inputCont">
+        <div class="inputSubCont" id="topCont">
+            <label for="titleOfPage">Title of webpage:</label>
+            <input type="text" name="titleOfPage" id="titleOfPage">
+        </div>
+        <div class="inputSubCont" id="towCont">
+            <label for="titleOfWeb">Title of website:</label>
+            <input type="text" name="titleOfWeb" id="titleOfWeb">
+        </div>
+        <div class="inputSubCont" id="URLCont">
+            <label for="urlWeb">URL:</label>
+            <input type="url" name="urlWeb" id="urlWeb">
+        </div>
+        <div class="inputSubCont dateMainCont" id="publishedDateCont">
+            <label for="publishDate">Published Date:</label>
+            <div class="dateSubCont">
+                <div class="dateInputCont pubDateSubCont">
+                    <label for="publishYear">Year:</label>
+                    <input type="number" name="publishYear" id="publishYear">
+                </div>
+                <div class="dateInputCont pubDateSubCont">
+                    <label for="publishMonth">Month:</label>
+                    <input type="number" name="publishMonth" id="publishMonth">
+                </div>
+                <div class="dateInputCont pubDateSubCont">
+                    <label for="publishDay">Day:</label>
+                    <input type="number" name="publishDay" id="publishDay">
+                </div>
+            </div>
+        </div>
+        <div class="inputSubCont dateMainCont" id="accessDateCont">
+            <label for="accessDate">Date accessed:</label>
+            <div class="dateSubCont">
+                <div class="dateInputCont accDateSubCont">
+                    <label for="accYear">Year:</label>
+                    <input type="number" name="accYear" id="accYear">
+                </div>
+                <div class="dateInputCont accDateSubCont">
+                    <label for="accMonth">Month:</label>
+                    <input type="number" name="accMonth" id="accMonth">
+                </div>
+                <div class="dateInputCont accDateSubCont">
+                    <label for="accDay">Day:</label>
+                    <input type="number" name="accDay" id="accDay">
+                </div>
+            </div>
+        </div>
+        <div class="inputSubCont" name="authorCont" id="authorCont">
+            <div name="authorHeaderCont" id="authorHeaderCont">
+                <h2>Author</h2>
+                <button type="button" id="addAuthor"> + Add another author </button>
+            </div>
+            <div class="inputSubCont" name="authorInfo" id="authorInfo">
+                <label for="authorFamilyName">Family name:</label>
+                <input type="text" name="authorFamilyName" id="authorFamilyName">
+                <label for="authorGivenName">Given name:</label>
+                <input type="text" name="authorGivenName" id="authorGivenName">
+            </div>
+        </div>
+        <button type="submit">done!</button>
+    </form>
+    <ul class="mainCont" name="resCont" id="resCont">
+        <li name="noRes" id="noRes">Make Citation!</li>
+    </ul>
+</body>
+
+</html>
